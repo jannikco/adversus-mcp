@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-adversus",
+      "description": "Connect AI agents to Adversus using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-adversus/SKILL.md": "305e07dcc135ca846a761701e29fcad57384ed7870811bdb24a06384e22fbf41"
+  }
+}

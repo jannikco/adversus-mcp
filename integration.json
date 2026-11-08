@@ -1,38 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "04b2c02c4fa312501a7226e52a26379b28f03148b55d668ded425304627bcd40",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api.adversus.io/swagger/apinew.json"
-  ],
   "id": "adversus-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Adversus MCP setup and connection checker",
-  "description": "Generate Adversus MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Adversus for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-adversus-mcp",
+  "sourceRevision": "223efa9322904de1d78065cd376178127e411db5b65766f1457bd03775516644",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api.adversus.io/swagger/apinew.json"
+  ],
+  "utility": {
+    "problem": "Prepare Adversus and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "adversus",
   "appName": "Adversus",
-  "providerDocs": "https://api.adversus.io/swagger/apinew.json",
-  "providerWebsite": "https://www.adversus.io/",
-  "authentication": {
-    "type": "basic",
-    "requiredCredentialFields": [
-      "username",
-      "password"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://help.adversus.io/en/articles/5781-create-an-api-user",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-adversus-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }
