@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "04b2c02c4fa312501a7226e52a26379b28f03148b55d668ded425304627bcd40",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://api.adversus.io/swagger/apinew.json"
+  ],
+  "id": "adversus-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Adversus MCP setup and connection checker",
+  "description": "Generate Adversus MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "adversus",
+  "appName": "Adversus",
+  "providerDocs": "https://api.adversus.io/swagger/apinew.json",
+  "providerWebsite": "https://www.adversus.io/",
+  "authentication": {
+    "type": "basic",
+    "requiredCredentialFields": [
+      "username",
+      "password"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://help.adversus.io/en/articles/5781-create-an-api-user",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-adversus-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
